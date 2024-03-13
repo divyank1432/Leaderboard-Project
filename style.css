@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.leader-board{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 80%;
+    padding: 25px;
+    border: 15px solid #242d24;
+    height: 750px;
+    background: linear-gradient(45deg,#ECE3CE, #0bccea);
+}
+h1{
+    margin: 15px 0px 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #242d24;
+    font-size: 40px;
+}
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    list-style-type: armenian;
+    overflow-y: scroll;
+}
+#list::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+}
+.form{
+    display: flex;
+    gap: 15px;
+    max-width: 100%
+}
+.eachList{
+    display: grid;
+    grid-template-columns: 35% 20% 20% 25%;
+    width: 100%;
+    background-color: #ECE3CE;
+    padding: 15px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    border: 5px solid #4F6F52;
+    text-transform: capitalize;
+}
+input{
+    height: 40px;
+    padding: 10px;
+    background-color: #ECE3CE;
+    border: 2px solid #4F6F52;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+}
+input:focus {
+    outline: none;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form button{
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #db12df;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.buttonSection{
+    display: flex;
+    justify-content: space-between;
+}
+.plus{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #20ae94;
+    color: white;
+    font-weight: bold;
+}
+.minus{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #311fcf;
+    color: white;
+    font-weight: bold;
+}
+.del{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #195ebe;
+    color: white;
+    text-transform: capitalize;
+}
